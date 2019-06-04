@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>form validation</title>
+</head>
+<body>
+    
+<div class="container">
+
+    <h1>Contact us</h1>
+    <form id="myForm">
+        <!-- name field -->
+        <div class="form-group">
+            <label for="name"> Enter your Name</label>
+            <input type="text" name="name" 
+                    id="name" 
+                    class="form-control" 
+                    placeholder="Enter your Name"
+            >
+        </div>
+        <!-- email -->
+        <div class="form-group">
+            <label for="email">Enter your Email</label>
+            <input type="email" name="email" 
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your Email"
+            >
+        </div>
+
+        <!-- age -->
+        <div class="form-group">
+            <label for="age">Enter your Age</label>
+            <input type="text" name="age"
+                    id="age"
+                    class="form-control"
+                    placeholder="Enter your Age"
+                    >
+        </div>
+
+        <!-- password -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password"
+                     id="password"
+                     class="form-control"
+                     placeholder="enter a password"
+            >
+        </div>
+
+        <!-- confirm password -->
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword"
+                     id="confirmPassword"
+                     class="form-control"
+                     placeholder="confirm password"
+            >
+        </div>
+
+        <fieldset class="form-group">
+            <legend>What movies do you like</legend>
+         
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" 
+                            name="movieLike" 
+                            id="option1"
+                            class="form-check-input"
+                            value="Action"
+                    >
+                Action
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" 
+                            name="movieLike" 
+                            id="option2"
+                            class="form-check-input"
+                            value="drama"
+                    >
+                    Drama
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" 
+                            name="movieLike" 
+                            id="option3"
+                            class="form-check-input"
+                            value="comedy"
+                    >
+                    Comedy
+                </label>
+            </div>
+
+        </fieldset>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" 
+                        name="receiveMails"
+                         id="receiveMails"
+                         class="form-check-input"
+                >
+                I want to receive news letter
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script  type="application/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="application/javascript"  src="js/jquery.validate.min.js"></script>
+<script  type="application/javascript" src="js/script.js"></script>
+</body>
+</html>
